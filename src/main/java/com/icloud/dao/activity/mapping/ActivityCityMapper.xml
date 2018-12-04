@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.icloud.dao.activity.ActivityCityMapper" >
+  <resultMap id="BaseResultMap" type="com.icloud.model.activity.ActivityCity" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="codeno" property="codeno" jdbcType="VARCHAR" />
+    <result column="pcodeno" property="pcodeno" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, name, codeno, pcodeno
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_activity_city
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from t_activity_city
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.icloud.model.activity.ActivityCity" >
+    insert into t_activity_city (id, name, codeno, 
+      pcodeno)
+    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{codeno,jdbcType=VARCHAR}, 
+      #{pcodeno,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.icloud.model.activity.ActivityCity" >
+    insert into t_activity_city
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="codeno != null" >
+        codeno,
+      </if>
+      <if test="pcodeno != null" >
+        pcodeno,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="codeno != null" >
+        #{codeno,jdbcType=VARCHAR},
+      </if>
+      <if test="pcodeno != null" >
+        #{pcodeno,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.icloud.model.activity.ActivityCity" >
+    update t_activity_city
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="codeno != null" >
+        codeno = #{codeno,jdbcType=VARCHAR},
+      </if>
+      <if test="pcodeno != null" >
+        pcodeno = #{pcodeno,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.icloud.model.activity.ActivityCity" >
+    update t_activity_city
+    set name = #{name,jdbcType=VARCHAR},
+      codeno = #{codeno,jdbcType=VARCHAR},
+      pcodeno = #{pcodeno,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+  <select id="findForList" parameterType="com.icloud.model.activity.ActivityCity" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_activity_city
+    <where>
+      <if test="name!=null and ''!=name">
+        and name=#{name,jdbcType=VARCHAR}
+      </if>
+      <if test="codeno!=null and ''!=codeno">
+        and codeno=#{codeno,jdbcType=VARCHAR}
+      </if>
+      <if test="pcodeno!=null and ''!=pcodeno">
+        and pcodeno=#{codeno,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </select>
+</mapper>
