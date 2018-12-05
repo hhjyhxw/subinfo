@@ -9,6 +9,8 @@ public class ActivityUser {
 
     private String sex;
 
+    private String headurl;
+
     public Long getId() {
         return id;
     }
@@ -39,5 +41,13 @@ public class ActivityUser {
 
     public void setSex(String sex) {
         this.sex = sex == null ? null : sex.trim();
+    }
+
+    public String getHeadurl() {
+        return headurl;
+    }
+
+    public void setHeadurl(String headurl) {
+        this.headurl = headurl;
     }
 }

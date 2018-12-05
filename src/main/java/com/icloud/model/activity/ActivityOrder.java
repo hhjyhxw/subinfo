@@ -1,6 +1,11 @@
 package com.icloud.model.activity;
 
-public class ActivityOrder {
+import com.icloud.model.BaseModel;
+
+import java.util.Date;
+
+public class ActivityOrder extends BaseModel {
+
     private Long id;
 
     private String orderNo;
@@ -18,6 +23,8 @@ public class ActivityOrder {
     private String realName;
 
     private String organizations;
+
+    private Date createTime;
 
     public Long getId() {
         return id;
@@ -89,5 +96,13 @@ public class ActivityOrder {
 
     public void setOrganizations(String organizations) {
         this.organizations = organizations == null ? null : organizations.trim();
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 }

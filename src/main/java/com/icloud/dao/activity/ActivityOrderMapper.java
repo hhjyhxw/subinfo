@@ -18,4 +18,13 @@ public interface ActivityOrderMapper {
     int updateByPrimaryKey(ActivityOrder record);
 
     public List<ActivityOrder> findForList(ActivityOrder record);
+
+    /***
+     *
+     * Description:获取下一个订单序列值
+     * @author zhangdehai
+     * @return
+     * @date 2018年2月9日上午11:42:54
+     */
+    public String getOrderNo();
 }

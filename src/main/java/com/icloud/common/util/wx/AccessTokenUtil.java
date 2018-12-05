@@ -1,14 +1,12 @@
 //package com.icloud.common.util.wx;
 //
-//import java.util.HashMap;
-//import java.util.Map;
-//
+//import com.icloud.common.ConfigUtil;
+//import com.icloud.common.util.AccessTokenAndJsapiTicketUtil;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 //
-//import com.icloud.common.CacheUtils;
-//import com.icloud.common.ConfigUtil;
-//import com.icloud.common.util.AccessTokenAndJsapiTicketUtil;
+//import java.util.HashMap;
+//import java.util.Map;
 //
 ///**
 // * 获取基础accessToken
