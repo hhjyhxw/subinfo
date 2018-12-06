@@ -73,4 +73,10 @@ public class BaseAccessTokenUtil {
 			return null;
 		}
 	}
+
+	public static void main(String[] args){
+
+	}
 }
+
+

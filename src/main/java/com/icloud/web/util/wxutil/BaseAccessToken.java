@@ -43,7 +43,7 @@ public class BaseAccessToken implements Serializable{
 
 	//是否在有效期内
 	public boolean isValid(Long nowTime){
-		if(nowTime-createTime-allowTime<expiresIn){
+		if((nowTime-createTime)/1000-allowTime<expiresIn){
 			return true;
 		}
 		return false;
