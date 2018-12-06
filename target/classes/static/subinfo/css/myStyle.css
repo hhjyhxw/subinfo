@@ -61,7 +61,7 @@
 	height: 64%;
 	width: 98%;
 	position: absolute;
-	bottom：8%;
+	bottom: 8%;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -219,3 +219,74 @@ form{
 	box-shadow: ;
 }
 /*信息填写表单页  End*/
+.modal-comfirm {
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+.modal-comfirm .content_zhongjiang {
+	-webkit-transform: translateX(-50%) translateY(-65%);
+	width: 80%;
+	height: auto;
+	border-radius: 15px;
+	background:#fd9c02;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding:15px;
+	box-sizing: border-box;
+}
+.content_in{
+	width:100%;
+	height: 100%;
+	background: #FFFCE1;
+	border-radius: 20px;
+	padding:35px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+}
+.confirmTitle{
+	text-align: center;
+	color: #b92e09;
+	font-size:36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+.confirmInfo{
+	text-align: center;
+}
+.confirmInfo span{
+	color: #b92e09;
+	font-size:28px;
+	font-weight: bold;
+	line-height: 36px;
+	margin: 0 8px;
+}
+.confirmInfo span>i{
+	font-style: normal;
+	font-size: 30px;
+	color: red;
+}
+.tip{
+	font-size: 22px;
+	color: red;
+	text-align: center;
+	margin: 20px 50px;
+	line-height: 40px;
+}
+.close_btn_bottom{
+	position: absolute;
+	bottom:-85px;
+	width:60px ;
+	height: 60px;
+	left: 50%;
+	margin-left: -30px;
+	background: url(../images/close.png) repeat 50% 50%;
+	background-size: 100%;
+}

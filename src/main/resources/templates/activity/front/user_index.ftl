@@ -69,23 +69,78 @@
 							<div class="headName"><span></span>认领保费 <i>(万元)</i><span></span></div>
 							<input name="amout"  id="amout" type="number" />
 						</div>
-						<a class="submitBtn" href="javascript:submitData();">提 交</a>
+						<a class="submitBtn" href="javascript:beforeSubData();">提 交</a>
 						<input name="cityName"  id="cityName" type="hidden" />
 					</form>
 				</div>
 			</div>
 		</div>
+
+		<!-- 确认认领保费弹窗 HTML -->
+        <div class="modal-comfirm" style="display:none;">
+            <div class="content_zhongjiang">
+                <div class="content_in zj_con_long repadding">
+                    <p class="confirmTitle">请确认表单</p>
+                    <div class="confirmInfo">
+                        <span id="com_city">北海</span>
+                        <span id="com_realname">惠周大</span>
+                        <span id="com_amout"></span>
+                    </div>
+                    <p class="tip">每人仅可提交一次，确认无误，提交后返回原页面即可退出</p>
+                    <a class="submitBtn" href="javascript:submitData();">确 认 提 交</a>
+                </div>
+
+                <span class="close_btn_bottom"></span>
+            </div>
+        </div>
+        <!-- 确认认领保费弹窗 -->
 	</body>
 
     <script src="${request.contextPath}/js/jquery-1.7.2.js"></script>
 	<#-- <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> -->
 	<script type="text/javascript">
+
         $(function(){
                 $("#cityId").change(function(){
                    var text = $(this).find("option:selected").text();
                    $("#cityName").val(text);
                 });
+                ////关闭确认框
+                $(".close_btn_bottom").click(function(){
+                    $(".modal-comfirm").hide();
+                });
+
          });
+
+        //beforeSubData,提交前再次确认数据
+        function beforeSubData(){
+             var cityId = $("#cityId").val();
+            if(cityId==""){
+                alert("请选择城市");
+                return;
+            }
+            var cityName = $("#cityName").val();
+            if(cityName==""){
+                alert("请选择城市");
+                return;
+            }
+            var realName = $("#realName").val();
+             if(realName==""){
+                alert("请填写姓名");
+                 return;
+             }
+            var amout = $("#amout").val();
+            if(amout==""){
+                alert("请填写认购金额");
+                 return;
+             }
+             $("#com_city").text(cityName);
+             $("#com_realname").text(realName);
+             $("#com_amout").html("认领保费 <i>"+amout+"</i> 万元");
+             $(".modal-comfirm").show();
+
+        }
+
         //提交数据
         function submitData(){
             var cityId = $("#cityId").val();
@@ -108,6 +163,8 @@
                 alert("请填写认购金额");
                  return;
              }
+             //关闭确认框
+              $(".modal-comfirm").hide();
 
                 $.ajax({
                     url: '${request.contextPath}/frontpage/activityUser/subOrder',

@@ -109,8 +109,35 @@
                 });
                 $("#tulist").html(resultStr);
             }
-             //封装滚动数据
+             //第一次封装滚动数据
             function getInfoLists(data){
+                var resultStr = '';
+                  resultStr+='<marquee  direction="up" scrolldelay="200" loop="infinite" style="overflow: hidden;">';
+                  resultStr+='<ul class="infoLists">';
+                $.each(data, function(i, n){
+                     resultStr+='<li>';
+                     resultStr+='<span>'+n.cityName+'</span>';
+                     resultStr+='<span>'+n.realName+'</span>';
+                     resultStr+='<span>认领<i >'+n.amout+'</i>万元</span>';
+                     resultStr+='</li>';
+
+                });
+                 resultStr+='</ul>';
+                 resultStr+='</marquee>';
+                $(".scrollBox").html(resultStr);
+            }
+
+
+            //刷新柱状图数据
+            function reflushtTuList(data){
+                $.each(data, function(i, n){
+                    $("#height_"+n.cityId).css("height",n.amoutHeight+"%");
+                    var str = n.amount + "<i>" +n.cityName+"</i>";
+                    $("#amount_"+n.cityId).html(str);
+                });
+            }
+             //刷新滚动数据
+            function refleshInfoLists(data){
                 var resultStr = '';
                 $.each(data, function(i, n){
                      resultStr+='<li>';
@@ -121,16 +148,6 @@
                 });
                 $(".infoLists").html(resultStr);
             }
-
-            //刷新柱状图数据
-            function reflushtTuList(data){
-                $.each(data, function(i, n){
-                    $("#height_"+n.cityId).css("height",n.amoutHeight+"%");
-                    var str = n.amount + "<i>" +n.cityName+"</i>";
-                    $("#amount_"+n.cityId).html(str);
-                });
-            }
-
              //刷新数据
             function refleshData(){
                     $.ajax({
@@ -143,7 +160,7 @@
                                 $("#totalMountheight").css("height",data.totalCityAmount.amoutHeight+"%");
                                 $("#totalMount").text(data.totalCityAmount.amount);
                                 reflushtTuList(data.cityAmountList);
-                                getInfoLists(data.orderList);
+                                refleshInfoLists(data.orderList);
                            }
                         },
                        error: function(data){
