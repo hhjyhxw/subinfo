@@ -85,7 +85,6 @@ public class ActivityCenterController {
                 cityAmountData.setAmount(0d);
                 cityAmountData.setCityId(city.getId());
                 cityAmountData.setCityName(city.getName());
-
                 cityAmountDataMap.put(city.getId(),cityAmountData);
             }
 
@@ -99,7 +98,6 @@ public class ActivityCenterController {
                     cityAmountData.setCityId(order.getCityId());
                     cityAmountData.setCityName(order.getCityName());
                 }else{
-                    cityAmountData.setAmount(order.getAmout());
                     cityAmountData.setCityId(order.getCityId());
                     cityAmountData.setAmount(cityAmountData.getAmount().doubleValue()+order.getAmout().doubleValue());
                 }
@@ -112,14 +110,18 @@ public class ActivityCenterController {
             while (it.hasNext()) {
                 Long key = new Long(it.next().toString());
                 CityAmountData citydata = cityAmountDataMap.get(key);
-                citydata.setAmoutHeight(saveTwoPoit(citydata.getAmount()/10));
+                citydata.setAmoutHeight(saveTwoPoit(citydata.getAmount()/12));
+                if(citydata.getAmoutHeight()>100){
+                    citydata.setAmoutHeight(100);
+                }
                 cityAmountList.add(citydata);
             }
 
 
             CityAmountData totalCityAmount = new CityAmountData();
             totalCityAmount.setAmount(totalMount);
-            totalCityAmount.setAmoutHeight(saveTwoPoit(totalMount/100));
+            totalCityAmount.setAmoutHeight(saveTwoPoit(totalMount/30));
+            totalCityAmount.setAmoutHeight(totalCityAmount.getAmount()>100?100:totalCityAmount.getAmount());
             map.put("totalCityAmount",totalCityAmount);
             map.put("cityAmountList",cityAmountList);
             return map;

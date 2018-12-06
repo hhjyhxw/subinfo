@@ -81,14 +81,15 @@ body {
   display: block;
   float: left;
   height: 90%;
-  position: relative;
+  position: absolute;
   width: 100%;
+  bottom: 0;
 }
 
 #bar-chart .bar-group .bar {
-  visibility: hidden;
-  height: 0;
-  -webkit-animation: animate-height;
+  /*visibility: hidden;*/
+  height: 0%;
+  /*-webkit-animation: animate-height;
   -moz-animation: animate-height;
   animation: animate-height;
   animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
@@ -98,24 +99,24 @@ body {
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
   animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;*/
   box-shadow: 1px 0 2px rgba(0, 0, 0, 0.15);
   border: 1px solid #f84d3c;
   border-radius: 3px 3px 0 0;s
   cursor: pointer;
-  height: 0ss;
   position: absolute;
   text-align: center;
   width: 56%;
+  bottom: 0px;
   left: 0;
   right: 0;
   margin: 0 auto;
   vertical-align: bottom;
 }
 #bar-chart .bar-group .barChild {
-  visibility: hidden;
-  height: 100%;
-  -webkit-animation: animate-height;
+  /*visibility: hidden;*/
+  height: 0%;
+  /*-webkit-animation: animate-height;
   -moz-animation: animate-height;
   animation: animate-height;
   animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
@@ -125,7 +126,7 @@ body {
   -webkit-animation-duration: 0.4s;
   -moz-animation-duration: 0.4s;
   animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;*/
   box-shadow: 1px 0 2px rgba(0, 0, 0, 0.15);
   border: 1px solid #f84d3c;
   border-radius: 3px 3px 0 0;

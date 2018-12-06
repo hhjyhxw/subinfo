@@ -53,7 +53,7 @@
     					</div>
     					<div class="rightShow">
     						<div class="twoCodeBox">
-    							<div class="codeImg" style="background: url(${request.contextPath}/subinfo/images/goto.png) no-repeat 0 0;"></div>
+    							<div class="codeImg" style="background: url(${request.contextPath}/subinfo/images/goto.png) no-repeat 0 0;background-size:100% 100%;"></div>
     							<span class="tipBottom">快扫码认领吧</span>
     						</div>
     					</div>
@@ -72,6 +72,11 @@
     	     //页面加载数据
             $(function(){
                    getData();
+                   //设置二维码的高度
+                   var width = $(".twoCodeBox").width();
+                    //$(".twoCodeBox").height(width+10);
+                    //$(".rightShow").height(width+10);
+
              });
 
             //获取数据
