@@ -56,6 +56,7 @@ com\icloud\dao\bms\BmsAdminRoleMapper.class
 com\icloud\model\bms\BmsAdminRole.class
 com\icloud\common\util\wx\XmlMessageUtil.class
 com\icloud\common\util\wx\AccessToken.class
+com\icloud\web\activity\front\CheckTokenController.class
 com\icloud\web\upload\UpLoadController.class
 com\icloud\web\util\DESUtils.class
 com\icloud\common\ftp\FtpUtils$UploadStatus.class

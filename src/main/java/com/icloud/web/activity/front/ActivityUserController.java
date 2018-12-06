@@ -41,6 +41,7 @@ public class ActivityUserController {
     @RequestMapping("/userIndex")
     public String list(HttpServletRequest request) {
         try {
+            request.setAttribute("clientToken",  request.getSession().getAttribute("payToken"));
             request.setAttribute("jssdk", JsTickUtil.getJSSDK(ConfigUtil.get("appid"),ConfigUtil.get("appsecret"),getRequestURL(request)));
         }catch (Exception e){
             e.printStackTrace();

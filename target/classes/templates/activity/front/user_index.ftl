@@ -105,13 +105,14 @@
                    var text = $(this).find("option:selected").text();
                    $("#cityName").val(text);
                 });
+                ////关闭确认框
                 $(".close_btn_bottom").click(function(){
                     $(".modal-comfirm").hide();
                 });
 
          });
 
-        //beforeSubData
+        //beforeSubData,提交前再次确认数据
         function beforeSubData(){
              var cityId = $("#cityId").val();
             if(cityId==""){
@@ -162,6 +163,8 @@
                 alert("请填写认购金额");
                  return;
              }
+             //关闭确认框
+              $(".modal-comfirm").hide();
 
                 $.ajax({
                     url: '${request.contextPath}/frontpage/activityUser/subOrder',

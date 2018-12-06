@@ -15,7 +15,7 @@ public class InterceptorStack {
 	static class WebMvcConfigurer extends WebMvcConfigurerAdapter {
 		public void addInterceptors(InterceptorRegistry registry) {
 		    registry.addInterceptor(new PermissionsInterceptor()).addPathPatterns("/admin/**").addPathPatterns("/backpage/**");
-			registry.addInterceptor(new AddTokenInterceptor()).addPathPatterns("/beanGoods/goodsDetail");
+			registry.addInterceptor(new AddTokenInterceptor()).addPathPatterns("/activityUser/userIndex");
 		    registry.addInterceptor(new RemoveTokenInterceptor()).addPathPatterns("/checkToken/removeToken");
 //            registry.addInterceptor(new LoginInterceptorNew()).addPathPatterns("/frontpage/**"); //手机端拦截
             registry.addInterceptor(new LoginInterceptorNew_bak()).addPathPatterns("/frontpage/**"); //手机端拦截
