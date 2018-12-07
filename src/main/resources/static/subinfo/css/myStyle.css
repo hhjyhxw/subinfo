@@ -70,16 +70,17 @@
 	padding-bottom: 10px;
 }
 .infoLists{
-	width: 100%;
-	animation: scrollName 20s linear infinite;
-	-webkit-animation:scrollName 20s linear infinite;
-	-moz-animation:scrollName 20s linear infinite;
+    height:100%;
+	/*width: 100%;
+	animation: scrollName 5s linear infinite;
+	-webkit-animation:scrollName 5s linear infinite;
+	-moz-animation:scrollName 5s linear infinite;
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 	bottom: 0%;
-	top: 80%;
+	top: 80%;*/
 }
 .infoLists li{
 	text-align: center;

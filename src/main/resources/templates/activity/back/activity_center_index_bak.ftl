@@ -132,7 +132,7 @@
              //第一次封装滚动数据
             function getInfoLists(data){
                 var resultStr = '';
-                  resultStr+='<marquee  direction="up" scrolldelay="0" loop="infinite" style="overflow: hidden;">';
+                  resultStr+='<marquee  direction="up" scrolldelay="200" loop="infinite" style="overflow: hidden;">';
                   resultStr+='<ul class="infoLists" id="infoLists">';
                 $.each(data, function(i, n){
                      resultStr+='<li>';

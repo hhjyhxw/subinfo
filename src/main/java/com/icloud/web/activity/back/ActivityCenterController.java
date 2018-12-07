@@ -121,7 +121,8 @@ public class ActivityCenterController {
             CityAmountData totalCityAmount = new CityAmountData();
             totalCityAmount.setAmount(totalMount);
             totalCityAmount.setAmoutHeight(saveTwoPoit(totalMount/30));
-            totalCityAmount.setAmoutHeight(totalCityAmount.getAmount()>100?100:totalCityAmount.getAmount());
+            totalCityAmount.setAmoutHeight(totalCityAmount.getAmoutHeight()>100?100:totalCityAmount.getAmoutHeight());
+            totalCityAmount.setAmoutHeight(saveTwoPoit(totalCityAmount.getAmoutHeight()));
             map.put("totalCityAmount",totalCityAmount);
             map.put("cityAmountList",cityAmountList);
             return map;

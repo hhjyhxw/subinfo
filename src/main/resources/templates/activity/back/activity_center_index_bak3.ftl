@@ -163,6 +163,7 @@
                      resultStr+='</li>';
                 });
                 $(".infoLists").html(resultStr);
+                 modifyScrollName();
 
               }
              //刷新数据
@@ -189,7 +190,7 @@
             }
 
             function modifyScrollName(){
-               var height = $(".infoLists").height()*10;
+               var height = $(".infoLists").height();
                var cssRule = getRule();//获取@keyframes  
 
                cssRule.deleteRule("0");
