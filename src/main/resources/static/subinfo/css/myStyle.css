@@ -21,6 +21,7 @@
 	bottom: 0;
 	background: -webkit-linear-gradient(top, rgba(255,255,255,0.8) 10%, rgba(255,255,255,0.5) 70%) ;
 	border-radius: 4px 4px 0 0 ;
+	font-weight:bold;
 }
 .barGraphSUM{
 	width: 18%;
@@ -70,9 +71,9 @@
 }
 .infoLists{
 	width: 100%;
-	animation: scrollName  5s linear infinite;
-	-webkit-animation:scrollName 5s linear infinite;
-	-moz-animation:scrollName  5s linear infinite;
+	animation: scrollName 20s linear infinite;
+	-webkit-animation:scrollName 20s linear infinite;
+	-moz-animation:scrollName 20s linear infinite;
 	position: absolute;
 	left: 0;
 	right: 0;

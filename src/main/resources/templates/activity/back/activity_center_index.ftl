@@ -90,8 +90,8 @@
                    getData();
                    //设置二维码的高度
                    var width = $(".twoCodeBox").width();
-                    $(".twoCodeBox").height(width+10);
-                    $(".rightShow").height(width+10);
+                    $(".twoCodeBox").height(width);
+                    $(".rightShow").height(width);
              });
 
             //获取数据
@@ -107,7 +107,7 @@
                                 $("#totalMount").text(data.totalCityAmount.amount);
                                 getTuList(data.cityAmountList);
                                 getInfoLists(data.orderList);
-                                 modifyScrollName();
+                                modifyScrollName();
                            }
                         },
                        error: function(data){
@@ -162,12 +162,7 @@
                      resultStr+='<span>认领<i >'+n.amout+'</i>万元</span>';
                      resultStr+='</li>';
                 });
-                if(infoAddCount>15){
-                      $(".infoLists").html(resultStr);
-                }else{
-                     infoAddCount++;
-                     $(".infoLists").prepend(resultStr);
-                }
+                $(".infoLists").html(resultStr);
 
               }
              //刷新数据
@@ -194,13 +189,14 @@
             }
 
             function modifyScrollName(){
-               var height = $(".infoLists").height();
+               var height = $(".infoLists").height()*10;
                var cssRule = getRule();//获取@keyframes  
 
                cssRule.deleteRule("0");
                cssRule.deleteRule("1");
-               cssRule.appendRule("0%{top:"+height*0.7+"px; }");
+               cssRule.appendRule("0%{top:"+height*0.8+"px; }");
                cssRule.appendRule("100%{top:-"+(height-50)+"px;}")
+               //cssRule.appendRule("100%{top:0px;}")
             }
              //获取指定动画名称
              function getRule() {
