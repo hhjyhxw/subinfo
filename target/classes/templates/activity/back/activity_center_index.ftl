@@ -13,6 +13,18 @@
 		<link rel="stylesheet" href="${request.contextPath}/subinfo/css/myStyle.css">
 		<link rel="stylesheet" href="${request.contextPath}/subinfo/css/gragh.css">
 		<script src="${request.contextPath}/subinfo/js/global.js"></script>
+		<style type="text/css">
+        			/*滚动动画*/
+
+            @keyframes scrollName {
+              0% {
+                top: height*0.7px;
+              }
+              100% {
+                top: -height - 50px;
+              }
+            }
+        </style>
 	</head>
 
 	<body style="background: #eef1f5; overflow: hidden; width: 100%;">
@@ -44,10 +56,12 @@
     						<div id="bar-chart" class="infoScroll">
     							<p class="title"><span></span>认领信息<span></span></p>
     							<div class="scrollBox">
-    								<marquee  direction="up" scrolldelay="200" loop="infinite" style="overflow: hidden;">
+    								<#-- <marquee  direction="up" scrolldelay="200" loop="infinite" style="overflow: hidden;"> -->
+    								<div style="overflow: hidden; position: relative; width: 100%; height: 100%;">
     									<ul class="infoLists">
     									</ul>
-    								</marquee>
+    								</div>
+    								<#-- </marquee>  -->
     							</div>
     						</div>
     					</div>
@@ -64,6 +78,8 @@
 	<script src="${request.contextPath}/js/jquery-1.7.2.js"></script>
     	<#-- <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> -->
     	<script type="text/javascript">
+
+    	     var infoAddCount = 0;//滚动数据刷新次数
     	     //每2秒重新加载数据
     	     setInterval(function(){
                  refleshData();
@@ -91,6 +107,7 @@
                                 $("#totalMount").text(data.totalCityAmount.amount);
                                 getTuList(data.cityAmountList);
                                 getInfoLists(data.orderList);
+                                 modifyScrollName();
                            }
                         },
                        error: function(data){
@@ -111,7 +128,7 @@
              //第一次封装滚动数据
             function getInfoLists(data){
                 var resultStr = '';
-                  resultStr+='<marquee  direction="up" scrolldelay="200" loop="infinite" style="overflow: hidden;">';
+                  resultStr+='<div style="overflow: hidden; position: relative; width: 100%; height: 100%;">';
                   resultStr+='<ul class="infoLists" id="infoLists">';
                 $.each(data, function(i, n){
                      resultStr+='<li>';
@@ -122,7 +139,7 @@
 
                 });
                  resultStr+='</ul>';
-                 resultStr+='</marquee>';
+                 resultStr+='</div>';
                 $(".scrollBox").html(resultStr);
             }
 
@@ -145,7 +162,13 @@
                      resultStr+='<span>认领<i >'+n.amout+'</i>万元</span>';
                      resultStr+='</li>';
                 });
-                $(".infoLists").html(resultStr);
+                if(infoAddCount>15){
+                      $(".infoLists").html(resultStr);
+                }else{
+                     infoAddCount++;
+                     $(".infoLists").appendTo(resultStr);
+                }
+
               }
              //刷新数据
             function refleshData(){
@@ -160,6 +183,8 @@
                                 $("#totalMount").text(data.totalCityAmount.amount);
                                 reflushtTuList(data.cityAmountList);
                                 refleshInfoLists(data.orderList);
+                                //修改滚动窗口高度
+                                //modifyScrollName();
                            }
                         },
                        error: function(data){
@@ -167,6 +192,29 @@
                         }
                    });
             }
+
+            function modifyScrollName(){
+               var height = $(".infoLists").height();
+               var cssRule = getRule();//获取@keyframes  
+
+               cssRule.deleteRule("0");
+               cssRule.deleteRule("1");
+               cssRule.appendRule("0%{top:"+height*0.7+"px; }");
+               cssRule.appendRule("100%{top:-"+(height-50)+"px;}")
+            }
+             //获取指定动画名称
+             function getRule() {
+                  var rule;
+                  var ss = document.styleSheets;
+                  for (var i = 0; i < ss.length; ++i) {
+                      for (var x = 0; x < ss[i].cssRules.length; ++x) {
+                          rule = ss[i].cssRules[x];
+                          if (rule.name == "scrollName" && rule.type == CSSRule.KEYFRAMES_RULE) {
+                             return rule;
+                          }
+                      }
+                  }
+              }
 
     	</script>
 </html>
