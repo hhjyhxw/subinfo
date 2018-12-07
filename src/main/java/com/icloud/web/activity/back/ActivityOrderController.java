@@ -8,6 +8,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageInfo;
 import com.icloud.common.DateTools;
+import com.icloud.common.FreeMarkerConfig;
 import com.icloud.model.activity.ActivityOrder;
 import com.icloud.service.activity.ActivityOrderService;
 import com.icloud.web.BaseIdLongController;
@@ -16,9 +17,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 类名称: ActivityOrderController
@@ -30,6 +39,8 @@ import java.util.List;
 @RequestMapping(value = "${backPath}/activityOrder")
 public class ActivityOrderController  extends BaseIdLongController<ActivityOrder> {
 
+    @Autowired
+    FreeMarkerConfig freeMarkerConfig;
     @Autowired
     private ActivityOrderService activityOrderService;
 
@@ -81,5 +92,70 @@ public class ActivityOrderController  extends BaseIdLongController<ActivityOrder
     @Override
     public String del(Long id, HttpServletResponse response) throws Exception {
         return null;
+    }
+
+
+
+    /**
+     * 获取 订单列表
+     * @param request
+     * @return
+     */
+    @RequestMapping("/downLoadOrderlist")
+    public void downLoadOrderlist(HttpServletRequest request,HttpServletResponse resp, ActivityOrder t)
+            throws Exception {
+        String message = "";
+        String templateName = "orderListExcel.ftl";
+
+        PageInfo<ActivityOrder> pageInfo = activityOrderService.findByPage(1, 1000, t);
+        log.warn("查询结果：" + pageInfo.toString());
+
+        List<ActivityOrder> orderList = pageInfo.getList();
+        Map<String, Object> dataMap = new HashMap<String, Object>();
+        dataMap.put("orderList",orderList);
+        dataMap.put("sheetSize", orderList!=null?orderList.size():0);
+//
+        File file = null;
+        InputStream fin = null;
+        ServletOutputStream out = null;
+        String fileType = "excel";
+        String fileName = DateTools.date2Str(new Date(),"yyyy-MM-dd HH:mm:ss")
+                + "_orderListExcel";
+        try {
+            // 调用工具类WordGenerator的createDoc方法生成Word文档
+            file = freeMarkerConfig.createDoc(dataMap, fileName,templateName, fileType);
+            fin = new FileInputStream(file);
+            resp.setCharacterEncoding("utf-8");
+            resp.setContentType("application/msexcel");
+            // 设置浏览器以下载的方式处理该文件默认名为resume.doc
+            resp.addHeader("Content-Disposition", "attachment;filename="+ fileName + ".xls");
+
+            out = resp.getOutputStream();
+            byte[] buffer = new byte[512]; // 缓冲区
+            int bytesToRead = -1;
+            // 通过循环将读入的Word文件的内容输出到浏览器中
+            while ((bytesToRead = fin.read(buffer)) != -1) {
+                out.write(buffer, 0, bytesToRead);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            message = "下载失败!";
+            out.write(message.getBytes());
+        } finally {
+            if (fin != null)
+                try {
+                    fin.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            if (out != null)
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            if (file != null)
+                file.delete();
+        }
     }
 }

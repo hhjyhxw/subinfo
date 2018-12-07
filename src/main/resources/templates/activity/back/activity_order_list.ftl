@@ -36,10 +36,13 @@
                         </select>
 
 		       <a href="javascript:;" class="layui-btn layui-btn-small" id="search">
-					<i class="layui-icon">&#xe615;</i> 搜索
+					<i class="layui-icon">&#xe615;</i>搜索
 				</a>
+				  <a href="javascript:downLoadExcel();" class="layui-btn layui-btn-small" id="">
+                    <i class="layui-icon">&#xe615;</i>下载
+                </a>
 			</blockquote>
-			</form>	
+			</form>
 			<fieldset class="layui-elem-field">
 				<legend>类型列表</legend>
 				<div class="layui-field-box">
@@ -147,10 +150,14 @@
 				});
 			});
 			
-			//跳转修改
-			function toEdit(id){
-				window.location.href = "${request.contextPath}/backpage/appointmentActivity/toinput?id="+id;
-			}
+			//下载
+            function downLoadExcel(){
+                $("#form").attr('action',"${request.contextPath}/backpage/activityOrder/downLoadOrderlist");    //通过jquery为action属性赋值
+                $("#form").submit();    //提交ID为myform的表单
+                window.setTimeout(function(){
+                     $("#form").attr('action',"${request.contextPath}/backpage/activityOrder/list");    //通过jquery为action属性赋值
+                },1000);
+            }
 				
 		</script>
 	</body>

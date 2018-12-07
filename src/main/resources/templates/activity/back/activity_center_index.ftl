@@ -44,7 +44,7 @@
     						<div id="bar-chart" class="infoScroll">
     							<p class="title"><span></span>认领信息<span></span></p>
     							<div class="scrollBox">
-    								<marquee  direction="up" scrolldelay="300" loop="infinite" style="overflow: hidden;">
+    								<marquee  direction="up" scrolldelay="200" loop="infinite" style="overflow: hidden;">
     									<ul class="infoLists">
     									</ul>
     								</marquee>
@@ -76,7 +76,6 @@
                    var width = $(".twoCodeBox").width();
                     $(".twoCodeBox").height(width+10);
                     $(".rightShow").height(width+10);
-
              });
 
             //获取数据
@@ -112,8 +111,8 @@
              //第一次封装滚动数据
             function getInfoLists(data){
                 var resultStr = '';
-                  resultStr+='<marquee  direction="up" scrolldelay="300" loop="infinite" style="overflow: hidden;">';
-                  resultStr+='<ul class="infoLists">';
+                  resultStr+='<marquee  direction="up" scrolldelay="200" loop="infinite" style="overflow: hidden;">';
+                  resultStr+='<ul class="infoLists" id="infoLists">';
                 $.each(data, function(i, n){
                      resultStr+='<li>';
                      resultStr+='<span>'+n.cityName+'</span>';
@@ -147,7 +146,7 @@
                      resultStr+='</li>';
                 });
                 $(".infoLists").html(resultStr);
-            }
+              }
              //刷新数据
             function refleshData(){
                     $.ajax({
@@ -168,5 +167,6 @@
                         }
                    });
             }
+
     	</script>
 </html>

@@ -75,7 +75,8 @@
 				</div>
 			</div>
 		</div>
-
+		<#--
+        <input type="hidden" id="clientToken" value="${(clientToken)!}"/>
 		<!-- 确认认领保费弹窗 HTML -->
         <div class="modal-comfirm" style="display:none;">
             <div class="content_zhongjiang">
@@ -165,6 +166,15 @@
              }
              //关闭确认框
               $(".modal-comfirm").hide();
+              //放表单重复提交
+             var flag = checkPayToken();
+             if(!flag){
+                   alert("数据提交中,请稍后...");
+                  setTimeout(function(){
+                     window.location.reload();
+                }, 2000);
+                return;
+             }
 
                 $.ajax({
                     url: '${request.contextPath}/frontpage/activityUser/subOrder',
@@ -186,6 +196,31 @@
                        alert('网络异常，请稍后再试')
                     }
                });
+        }
+
+
+
+        //校验token,防止表单重复提交
+        function checkPayToken(){
+             var clientToken = $("#clientToken").val();//表单验证令牌
+             var flag = false;
+             $.ajax({
+                    url: '${request.contextPath}/frontpage/checkToken/removeToken',
+                    data:{"clientToken":clientToken},
+                    method : 'post',
+                    dataType : 'json',
+                    timeout:5000,
+                    async:false,
+                    success : function(data) {
+                        if(data!=null && data.status=="success"){
+                            flag = true;
+                        }
+                    },
+                    error : function(data) {
+
+                    }
+             });
+             return flag;
         }
 	</script>
 </html>

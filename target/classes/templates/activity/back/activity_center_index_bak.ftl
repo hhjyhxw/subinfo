@@ -77,6 +77,27 @@
                     $(".twoCodeBox").height(width+10);
                     $(".rightShow").height(width+10);
              });
+             //
+
+            //infoLists 的子元素长度大于600，清除一次，避免内存耗完
+             setInterval("scrolls(document.getElementById('infoLists'))",2000);
+             function scrolls(obj) {
+               if(obj.childNodes.length>600){
+                    obj.innerHTML='';
+               }
+             }
+
+            //首尾相连
+            setInterval("scrolls(document.getElementById('infoLists'))",1000);
+            function scrolls(obj) {
+              var tmp = (obj.scrollTop)++;
+              //当滚动条到达右边顶端时
+              if(obj.scrollTop==tmp) obj.innerHTML += obj.innerHTML;
+              //当滚动条滚动了初始内容的宽度时滚动条回到最左端
+              if(obj.scrollTop>=obj.firstChild.offsetHeight) obj.scrollTop=0;
+
+             }
+
 
             //获取数据
             function getData(){
@@ -111,7 +132,7 @@
              //第一次封装滚动数据
             function getInfoLists(data){
                 var resultStr = '';
-                  resultStr+='<marquee  direction="up" scrolldelay="200" loop="infinite" style="overflow: hidden;">';
+                  resultStr+='<marquee  direction="up" scrolldelay="0" loop="infinite" style="overflow: hidden;">';
                   resultStr+='<ul class="infoLists" id="infoLists">';
                 $.each(data, function(i, n){
                      resultStr+='<li>';
@@ -146,7 +167,7 @@
                      resultStr+='</li>';
                 });
                 $(".infoLists").html(resultStr);
-              }
+            }
              //刷新数据
             function refleshData(){
                     $.ajax({
@@ -167,6 +188,5 @@
                         }
                    });
             }
-
     	</script>
 </html>

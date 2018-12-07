@@ -45,6 +45,12 @@ public class PermissionsInterceptor implements HandlerInterceptor {
 					.format(beginTime), request.getRequestURI());
 		}
 
+		StringBuffer visiturl = new StringBuffer();
+		visiturl.append(request.getScheme() + "://"+request.getHeader("host")+request.getRequestURI());
+		if(visiturl.toString().indexOf("/backpage/activityCenter")>=0){
+			return true;
+		}
+
 		HttpSession session = request.getSession();
 		Object obj = session.getAttribute("admin_user");
 		printlnVisitInfo(request,handler);

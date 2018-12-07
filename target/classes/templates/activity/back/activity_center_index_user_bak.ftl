@@ -146,7 +146,7 @@
                      resultStr+='</li>';
                 });
                 $(".infoLists").html(resultStr);
-              }
+            }
              //刷新数据
             function refleshData(){
                     $.ajax({
