@@ -2,162 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0f893e65-dc94-4048-ac7f-03a1cfa3336e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/activity/back/activity_center_index_bak3.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/icloud/web/activity/back/ActivityCenterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/icloud/web/activity/back/ActivityCenterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/subinfo/css/gragh.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/subinfo/css/gragh.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/subinfo/css/myStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/subinfo/css/myStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/activity/back/activity_center_index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/activity/back/activity_center_index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/BeanApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/aspect/Log.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/AES.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/BigDecimalUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/CacheUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ChineseCharToEn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/CloudEventType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ConfigUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/Contants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/DateTools.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/DateUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/Distance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/FreeMarkerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/HttpUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/IpUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/JsonToMapUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/LogVars.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/LongPayUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/MD5Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/QueryBuilder$Criteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/QueryBuilder$Criterion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/QueryBuilder$GeneratedCriteria.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/QueryBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/RandomValidateCodeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ResponseUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ServiceUrlContants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ShaEncry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/SpringContextHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ThreadLocalVars.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/WeeYearkUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ftp/FtpFileService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ftp/FtpUtils$DownloadStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ftp/FtpUtils$FileType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ftp/FtpUtils$UploadStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/ftp/FtpUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/AccessTokenAndJsapiTicketUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/AppQRCodeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/ImgUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/RandomUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/RequestUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/StringUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/XmlParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/AccessToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/CommonUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/FormUploadMultimediaUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/HttpRequestUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/MyX509TrustManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/PayUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/Sha1Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/WxConst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/WxDataEncryptAndDecodeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/XmlMessageUtil$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/XmlMessageUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/XmlMessageUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/model/CustomerMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/model/JsApiTicket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/model/JsSDK.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/common/util/wx/model/MchBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/CorsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/SpringUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/datasource/DruidConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/interceptor/AddTokenInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/interceptor/BackLogInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/interceptor/InterceptorStack$WebMvcConfigurer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/interceptor/InterceptorStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/interceptor/LoginInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/interceptor/LoginInterceptorNew.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/interceptor/LoginInterceptorNew_bak.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/interceptor/PermissionsInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/interceptor/RemoveTokenInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/interceptor/ThirdInterfaceInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/config/quartz/job/CreateMothRanksJob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/dao/BaseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/dao/DAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/dao/activity/ActivityCityMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/dao/activity/ActivityOrderMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/dao/activity/ActivityUserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/dao/bms/BmsAdminMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/dao/bms/BmsAdminRoleMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/dao/bms/BmsMenuMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/dao/bms/BmsRoleMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/dao/bms/BmsRoleMenuMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/exceptions/BeanException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/exceptions/BeanSaveException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/exceptions/FormRepeatException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/exceptions/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/exceptions/SendPrizeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/model/BaseModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/model/activity/ActivityCity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/model/activity/ActivityOrder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/model/activity/ActivityUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/model/bms/BmsAdmin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/model/bms/BmsAdminRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/model/bms/BmsLogs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/model/bms/BmsMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/model/bms/BmsRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/model/bms/BmsRoleMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/BaseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/SERVICE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/activity/ActivityCityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/activity/ActivityOrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/activity/ActivityUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/bms/AdminRoleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/bms/AdminService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/bms/MenuService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/bms/RoleMenuService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/bms/RoleService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/redis/RedisCacheConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/redis/RedisCacheConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/redis/RedisService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/redislock/DistributedLock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/redislock/DistributedLockUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/service/redislock/JedisLock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/AppBaseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/BaseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/BaseIdLongController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/activity/back/ActivityCenterController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/activity/back/ActivityOrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/activity/back/CityAmountData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/activity/front/ActivityUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/activity/front/CheckTokenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/admin/AdminBaseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/admin/AdminController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/admin/AdminLoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/admin/MenuController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/admin/RoleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/admin/VeryCodeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/upload/PreUpLoadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/upload/UpLoadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/ClassUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/DESUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/EmotioUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/ExcelUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/HttpUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/LogUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/OrderUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/ParamCheckUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/RequestIpUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/Token.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/TopicOrderUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/WeixinInterfaceUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/wxutil/BaseAccessToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/wxutil/BaseAccessTokenUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/wxutil/JSSDK.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/icloud/web/util/wxutil/JsTickUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/subinfo/css/gragh.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/subinfo/css/gragh.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/subinfo/css/myStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/subinfo/css/myStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/activity/back/activity_center_index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/activity/back/activity_center_index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/activity/back/activity_center_index_bak.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/activity/back/activity_center_index_bak.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -219,20 +64,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="226" column="24" lean-forward="true" selection-start-line="222" selection-start-column="6" selection-end-line="226" selection-end-column="24" />
+            <state relative-caret-position="-216">
+              <caret line="227" column="20" lean-forward="true" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_center_index_bak.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/activity/back/activity_center_index_bak.ftl">
+      <file leaf-file-name="BaseAccessTokenUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="81" column="23" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="23" />
+            <state relative-caret-position="241">
+              <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseAccessToken.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessToken.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JSSDK.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/JSSDK.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsTickUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/JsTickUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -246,38 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_center_index_bak3.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/activity/back/activity_center_index_bak3.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="18" selection-end-line="216" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ActivityCenterController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/activity/back/ActivityCenterController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
               <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CityAmountData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/activity/back/CityAmountData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gragh.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/subinfo/css/gragh.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3520">
-              <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -384,7 +232,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/user_index.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/icloud/web/activity/back/CityAmountData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/icloud/service/redis/RedisCacheConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessToken.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/icloud/web/activity/front/ActivityUserController.java" />
@@ -402,6 +249,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/icloud/web/activity/back/ActivityCenterController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/activity/back/activity_center_index.ftl" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java" />
       </list>
     </option>
   </component>
@@ -469,6 +317,51 @@
               <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="icloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="icloud" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="icloud" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="icloud" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="wxutil" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
@@ -1242,14 +1135,14 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2853437" side_tool="true" weight="0.23878437" />
-      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.81920904" side_tool="true" weight="0.22697794" />
+      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.81920904" side_tool="true" visible="true" weight="0.22697794" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49092087" weight="0.2952243" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7146563" weight="0.2503618" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7146563" visible="true" weight="0.2503618" />
       <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.22720695" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5635538" weight="0.27206945" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.51626015" weight="0.21725032" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51626015" visible="true" weight="0.31841764" />
       <window_info id="Structure" order="1" sideWeight="0.4825986" side_tool="true" weight="0.2931258" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.18079096" weight="0.11867704" />
       <window_info id="UI Designer" order="4" />
@@ -1265,36 +1158,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30969608" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.22720695" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.106355384" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49092087" weight="0.2952243" />
-      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.18079096" weight="0.11867704" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51626015" visible="true" weight="0.21725032" />
-      <window_info id="Structure" order="1" sideWeight="0.4825986" side_tool="true" weight="0.2931258" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675745" weight="0.32561505" />
-      <window_info active="true" anchor="bottom" id="SVN Repositories" order="8" sideWeight="0.72632945" visible="true" weight="0.35455862" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7146563" weight="0.2503618" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28364688" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.30969608" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5635538" visible="true" weight="0.27206945" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2853437" side_tool="true" weight="0.23878437" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.8884565" weight="0.32706222" />
-      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.81920904" side_tool="true" weight="0.22697794" />
-      <window_info id="Favorites" order="5" sideWeight="0.48373982" side_tool="true" weight="0.2931258" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1354,13 +1217,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/activity/front/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user_index.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1406,31 +1262,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/JsTickUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/HttpUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1656,8 +1491,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="226" column="24" lean-forward="true" selection-start-line="222" selection-start-column="6" selection-end-line="226" selection-end-column="24" />
+        <state relative-caret-position="-216">
+          <caret line="227" column="20" lean-forward="true" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/JSSDK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/JsTickUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
