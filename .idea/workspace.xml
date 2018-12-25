@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0f893e65-dc94-4048-ac7f-03a1cfa3336e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,20 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="227" column="20" lean-forward="true" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
+            <state relative-caret-position="484">
+              <caret line="352" column="52" selection-start-line="352" selection-start-column="52" selection-end-line="352" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseAccessTokenUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseAccessTokenUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+            <state relative-caret-position="541">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -248,8 +250,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/subinfo/css/gragh.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/icloud/web/activity/back/ActivityCenterController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/activity/back/activity_center_index.ftl" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -1135,14 +1137,14 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2853437" side_tool="true" weight="0.23878437" />
-      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.81920904" side_tool="true" visible="true" weight="0.22697794" />
+      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.81920904" side_tool="true" weight="0.22697794" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49092087" weight="0.2952243" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7146563" visible="true" weight="0.2503618" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7146563" weight="0.2503618" />
       <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.22720695" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5635538" weight="0.27206945" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51626015" visible="true" weight="0.31841764" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.51626015" weight="0.31841764" />
       <window_info id="Structure" order="1" sideWeight="0.4825986" side_tool="true" weight="0.2931258" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.18079096" weight="0.11867704" />
       <window_info id="UI Designer" order="4" />
@@ -1158,6 +1160,36 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30969608" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.22720695" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.106355384" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49092087" weight="0.2952243" />
+      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.18079096" weight="0.11867704" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51626015" visible="true" weight="0.31841764" />
+      <window_info id="Structure" order="1" sideWeight="0.4825986" side_tool="true" weight="0.2931258" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675745" weight="0.32561505" />
+      <window_info active="true" anchor="bottom" id="SVN Repositories" order="8" sideWeight="0.72632945" visible="true" weight="0.35455862" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7146563" visible="true" weight="0.2503618" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28364688" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.30969608" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5635538" weight="0.27206945" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2853437" side_tool="true" weight="0.23878437" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.8884565" weight="0.32706222" />
+      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.81920904" side_tool="true" visible="true" weight="0.22697794" />
+      <window_info id="Favorites" order="5" sideWeight="0.48373982" side_tool="true" weight="0.2931258" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1489,13 +1521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="227" column="20" lean-forward="true" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1519,11 +1544,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+        <state relative-caret-position="541">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="352" column="52" selection-start-line="352" selection-start-column="52" selection-end-line="352" selection-end-column="52" />
         </state>
       </provider>
     </entry>
