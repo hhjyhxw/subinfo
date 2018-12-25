@@ -4,7 +4,6 @@
     <list default="true" readonly="true" id="0f893e65-dc94-4048-ac7f-03a1cfa3336e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessTokenUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,8 +68,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="352" column="52" selection-start-line="352" selection-start-column="52" selection-end-line="352" selection-end-column="52" />
+            <state relative-caret-position="241">
+              <caret line="356" column="34" selection-start-line="356" selection-start-column="34" selection-end-line="356" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -282,6 +281,17 @@
           <item name="bean-application" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="bean-application" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="bean-application" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="tomcat7" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -334,36 +344,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="icloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="icloud" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="icloud" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="icloud" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="wxutil" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
@@ -1129,7 +1109,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675745" weight="0.32561505" />
@@ -1137,14 +1116,14 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2853437" side_tool="true" weight="0.23878437" />
-      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.81920904" side_tool="true" weight="0.22697794" />
+      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.81920904" side_tool="true" visible="true" weight="0.22697794" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49092087" weight="0.2952243" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7146563" weight="0.2503618" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7146563" visible="true" weight="0.36468884" />
       <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.22720695" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5635538" weight="0.27206945" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.51626015" weight="0.31841764" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.51626015" visible="true" weight="0.16796368" />
       <window_info id="Structure" order="1" sideWeight="0.4825986" side_tool="true" weight="0.2931258" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.18079096" weight="0.11867704" />
       <window_info id="UI Designer" order="4" />
@@ -1160,36 +1139,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30969608" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.22720695" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.106355384" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49092087" weight="0.2952243" />
-      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.18079096" weight="0.11867704" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51626015" visible="true" weight="0.31841764" />
-      <window_info id="Structure" order="1" sideWeight="0.4825986" side_tool="true" weight="0.2931258" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675745" weight="0.32561505" />
-      <window_info active="true" anchor="bottom" id="SVN Repositories" order="8" sideWeight="0.72632945" visible="true" weight="0.35455862" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7146563" visible="true" weight="0.2503618" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28364688" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.30969608" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5635538" weight="0.27206945" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2853437" side_tool="true" weight="0.23878437" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.8884565" weight="0.32706222" />
-      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.81920904" side_tool="true" visible="true" weight="0.22697794" />
-      <window_info id="Favorites" order="5" sideWeight="0.48373982" side_tool="true" weight="0.2931258" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1554,8 +1503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="352" column="52" selection-start-line="352" selection-start-column="52" selection-end-line="352" selection-end-column="52" />
+        <state relative-caret-position="241">
+          <caret line="356" column="34" selection-start-line="356" selection-start-column="34" selection-end-line="356" selection-end-column="34" />
         </state>
       </provider>
     </entry>
