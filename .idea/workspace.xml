@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="0f893e65-dc94-4048-ac7f-03a1cfa3336e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -302,8 +301,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1374" />
+    <option name="height" value="817" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1108,7 +1107,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675745" weight="0.32561505" />
@@ -1118,12 +1118,12 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.2853437" side_tool="true" weight="0.23878437" />
       <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.81920904" side_tool="true" visible="true" weight="0.22697794" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49092087" weight="0.2952243" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7146563" visible="true" weight="0.36468884" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7146563" weight="0.36468884" />
       <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.22720695" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5635538" weight="0.27206945" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.5635538" visible="true" weight="0.27206945" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.51626015" visible="true" weight="0.16796368" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.51626015" visible="true" weight="0.25745785" />
       <window_info id="Structure" order="1" sideWeight="0.4825986" side_tool="true" weight="0.2931258" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.18079096" weight="0.11867704" />
       <window_info id="UI Designer" order="4" />
