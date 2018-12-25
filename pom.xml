@@ -220,11 +220,11 @@
 
         <!-- 通过cmd命令把jar放到本地库：mvn install:install-file -Dfile=D:/QQFile/alex-word-filter-1.0.0.jar 
         -DgroupId=com.zhumeng -DartifactId=alex-word-filter -Dversion=1.0.0 -Dpackaging=jar -->
-        <dependency>
+      <!--  <dependency>
             <groupId>com.zhumeng</groupId>
             <artifactId>alex-word-filter</artifactId>
             <version>1.0.0</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>

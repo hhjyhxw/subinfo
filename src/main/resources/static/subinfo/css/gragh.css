@@ -174,12 +174,13 @@ body {
 #bar-chart .bar-group .barChild span {
     position: absolute;
     top: -50px;
-    left: 0;
+    left: -25%;
     right: 0;
     margin: 0 auto;
     color: #f84d3c;
     font-size: 12px;
     font-weight: bold;
+    width:150%;
 }
 #bar-chart .bar-group .barChild span>i {
     position: absolute;

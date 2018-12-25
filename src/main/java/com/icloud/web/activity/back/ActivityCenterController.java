@@ -68,7 +68,7 @@ public class ActivityCenterController {
     }
 
     private Map<String,Object> getDataMap(List<ActivityOrder> orderList) {
-        if(orderList!=null && orderList.size()>0){
+
             Map<String,Object> map = new HashMap<String,Object>();
             //滚动列表数据
             map.put("orderList",orderList);
@@ -87,23 +87,23 @@ public class ActivityCenterController {
                 cityAmountData.setCityName(city.getName());
                 cityAmountDataMap.put(city.getId(),cityAmountData);
             }
-
-            for (int i=0;i<orderList.size();i++){
+        if(orderList!=null && orderList.size()>0) {
+            for (int i = 0; i < orderList.size(); i++) {
                 ActivityOrder order = orderList.get(i);
-                totalMount+=order.getAmout().doubleValue();
+                totalMount += order.getAmout().doubleValue();
                 CityAmountData cityAmountData = cityAmountDataMap.get(order.getCityId());
-                if(cityAmountData==null){
+                if (cityAmountData == null) {
                     cityAmountData = new CityAmountData();
                     cityAmountData.setAmount(order.getAmout());
                     cityAmountData.setCityId(order.getCityId());
                     cityAmountData.setCityName(order.getCityName());
-                }else{
+                } else {
                     cityAmountData.setCityId(order.getCityId());
-                    cityAmountData.setAmount(cityAmountData.getAmount().doubleValue()+order.getAmout().doubleValue());
+                    cityAmountData.setAmount(cityAmountData.getAmount().doubleValue() + order.getAmout().doubleValue());
                 }
-                cityAmountDataMap.put(order.getCityId(),cityAmountData);
+                cityAmountDataMap.put(order.getCityId(), cityAmountData);
             }
-
+        }
             //cityAmountDataMap 转成List
             List<CityAmountData> cityAmountList = new ArrayList<CityAmountData>();
             Iterator it = cityAmountDataMap.keySet().iterator();
@@ -126,8 +126,6 @@ public class ActivityCenterController {
             map.put("totalCityAmount",totalCityAmount);
             map.put("cityAmountList",cityAmountList);
             return map;
-        }
-        return null;
     }
 
     public double saveTwoPoit(double amount) {

@@ -31,11 +31,12 @@
 	margin-right: 1%;
 }
 .barGraphSUM p.title,.barGraphChild p.title,.infoScroll p.title{
-	font-size: 16px;
+	font-size: 18px;
 	color: #ff4500;
 	margin-top: 10px;
 	margin-bottom: 40px;
 	text-align: center;
+	font-weight:bold;
 }
 .barGraphSUM p.title>span,.barGraphChild p.title>span,.infoScroll p.title>span{
 	width: 12px;

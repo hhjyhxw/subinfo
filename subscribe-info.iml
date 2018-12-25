@@ -182,7 +182,6 @@
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.5.0" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.22.0-CR1" level="project" />
-    <orderEntry type="library" name="Maven: com.zhumeng:alex-word-filter:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.3" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.54" level="project" />
     <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.10" level="project" />

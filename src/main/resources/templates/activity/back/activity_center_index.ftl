@@ -26,7 +26,7 @@
     								<div class="bars">
     									<div class="bar-group">
     										<div class="bar bar-1 stat-1" id="totalMountheight" style="bottom: 0;height:0%;">
-    											<span id="totalMount">0</span>
+    											<span style="width: 99px;" id="totalMount">0</span>
     										</div>
     									</div>
     								</div>
@@ -75,8 +75,8 @@
                    getData();
                    //设置二维码的高度
                    var width = $(".twoCodeBox").width();
-                    $(".twoCodeBox").height(width);
-                    $(".rightShow").height(width);
+                    $(".twoCodeBox").height(2*width);
+                    $(".rightShow").height(2*width);
              });
              //
 
@@ -89,11 +89,14 @@
                         data:'',
                         async:false,
                         success: function(data){
-                           if(data!=null){
+                            if(data!='' && data!=null &&  'undefined'!=data.totalCityAmount.amoutHeight && null!=data.totalCityAmount.amoutHeight){
                                 $("#totalMountheight").css("height",data.totalCityAmount.amoutHeight+"%");
-                                $("#totalMount").text(data.totalCityAmount.amount);
+                                $("#totalMount").text(data.totalCityAmount.amount+'万');
                                 getTuList(data.cityAmountList);
-                                getInfoLists(data.orderList);
+                                if(data.orderList!=''){
+                                    getInfoLists(data.orderList);
+                                }
+
                            }
                         },
                        error: function(data){
@@ -106,7 +109,7 @@
                 var resultStr = '';
                 $.each(data, function(i, n){
                     resultStr+='<div class="barChild bar-1 stat-1" id="height_'+n.cityId+'" style="height:'+n.amoutHeight+'%;">';
-                        resultStr+='<span id="amount_'+n.cityId+'">'+n.amount+'<i>'+n.cityName+'</i></span>';
+                        resultStr+='<span id="amount_'+n.cityId+'">'+n.amount+'万<i>'+n.cityName+'</i></span>';
                     resultStr+='</div>';
                 });
                 $("#tulist").html(resultStr);
@@ -134,21 +137,25 @@
             function reflushtTuList(data){
                 $.each(data, function(i, n){
                     $("#height_"+n.cityId).css("height",n.amoutHeight+"%");
-                    var str = n.amount + "<i>" +n.cityName+"</i>";
+                    var str = n.amount + "万<i>" +n.cityName+"</i>";
                     $("#amount_"+n.cityId).html(str);
                 });
             }
              //刷新滚动数据
             function refleshInfoLists(data){
-                var resultStr = '';
-                $.each(data, function(i, n){
-                     resultStr+='<li>';
-                     resultStr+='<span>'+n.cityName+'</span>';
-                     resultStr+='<span>'+n.realName+'</span>';
-                     resultStr+='<span>认领<i >'+n.amout+'</i>万元</span>';
-                     resultStr+='</li>';
-                });
-                $(".infoLists").html(resultStr);
+                if($(".infoLists").children().length>0){
+                    var resultStr = '';
+                    $.each(data, function(i, n){
+                         resultStr+='<li>';
+                         resultStr+='<span>'+n.cityName+'</span>';
+                         resultStr+='<span>'+n.realName+'</span>';
+                         resultStr+='<span>认领<i >'+n.amout+'</i>万元</span>';
+                         resultStr+='</li>';
+                    });
+                    $(".infoLists").html(resultStr);
+                }else{
+                    getInfoLists(data);
+                }
             }
              //刷新数据
             function refleshData(){
@@ -158,11 +165,14 @@
                         data:'',
                         async:false,
                         success: function(data){
-                           if(data!=null){
+                           if(data!='' && data!=null &&  'undefined'!=data.totalCityAmount.amoutHeight && null!=data.totalCityAmount.amoutHeight){
                                 $("#totalMountheight").css("height",data.totalCityAmount.amoutHeight+"%");
-                                $("#totalMount").text(data.totalCityAmount.amount);
+                                $("#totalMount").text(data.totalCityAmount.amount+'万');
                                 reflushtTuList(data.cityAmountList);
-                                refleshInfoLists(data.orderList);
+                                if(data.orderList!=''){
+                                    refleshInfoLists(data.orderList);
+                                }
+
                            }
                         },
                        error: function(data){
