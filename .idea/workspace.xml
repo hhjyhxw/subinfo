@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="0f893e65-dc94-4048-ac7f-03a1cfa3336e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" readonly="true" id="0f893e65-dc94-4048-ac7f-03a1cfa3336e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,6 +53,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ssssss.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ssssss.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="241">
@@ -108,24 +120,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
               <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_center_index_user_bak.ftl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/activity/back/activity_center_index_user_bak.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2480">
-              <caret line="124" column="41" selection-start-line="124" selection-start-column="15" selection-end-line="124" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityCenterController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/activity/back/ActivityCenterController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -341,14 +335,6 @@
               <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="icloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="subscribe-info" type="b2602c69:ProjectViewProjectNode" />
-              <item name="subscribe-info" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -392,12 +378,10 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\20180917intelliidea_myproduct\subscribe-info\src\main\resources\templates\activity\back" />
-      <recent name="F:\20180917intelliidea_myproduct\subscribe-info\src\main\resources\static\subinfo\css" />
-      <recent name="F:\20180917intelliidea_myproduct\subscribe-info\src\main\resources\static\subinfo\images" />
-      <recent name="F:\20180917intelliidea_myproduct\subscribe-info\src\main\resources\templates" />
-      <recent name="F:\20180917intelliidea_myproduct\subscribe-info\src\main\resources\static\subinfo" />
+      <recent name="F:\20180727intelliidea\zlworkspace\zl-bean\src\main\resources\templates\appointment" />
+      <recent name="F:\20180727intelliidea\zlworkspace\zl-bean\src\main\resources\templates\front\user" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.icloud.web.activity.front" />
@@ -406,10 +390,12 @@
       <recent name="com.icloud.web.activity" />
       <recent name="com.icloud.service.activity" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\20180917intelliidea_myproduct\subscribe-info\src\main\resources\templates\activity\back" />
-      <recent name="F:\20180727intelliidea\zlworkspace\zl-bean\src\main\resources\templates\appointment" />
-      <recent name="F:\20180727intelliidea\zlworkspace\zl-bean\src\main\resources\templates\front\user" />
+      <recent name="F:\20180917intelliidea_myproduct\subscribe-info\src\main\resources\static\subinfo\css" />
+      <recent name="F:\20180917intelliidea_myproduct\subscribe-info\src\main\resources\static\subinfo\images" />
+      <recent name="F:\20180917intelliidea_myproduct\subscribe-info\src\main\resources\templates" />
+      <recent name="F:\20180917intelliidea_myproduct\subscribe-info\src\main\resources\static\subinfo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1107,8 +1093,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49675745" weight="0.32561505" />
@@ -1120,10 +1105,10 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49092087" weight="0.2952243" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7146563" weight="0.36468884" />
       <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.22720695" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.5635538" visible="true" weight="0.27206945" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5635538" visible="true" weight="0.27206945" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.51626015" visible="true" weight="0.25745785" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.51626015" visible="true" weight="0.25745785" />
       <window_info id="Structure" order="1" sideWeight="0.4825986" side_tool="true" weight="0.2931258" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.18079096" weight="0.11867704" />
       <window_info id="UI Designer" order="4" />
@@ -1198,13 +1183,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user_index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="133" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="8" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/activity/back/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="980">
@@ -1233,13 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1463,13 +1434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/icloud/web/util/wxutil/BaseAccessToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1507,6 +1471,23 @@
           <caret line="356" column="34" selection-start-line="356" selection-start-column="34" selection-end-line="356" selection-end-column="34" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ssssss.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
